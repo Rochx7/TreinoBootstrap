@@ -1,0 +1,312 @@
+@import url(./bootstrap.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #1a1a1a;
+}
+a:hover {
+    color: #ccc;
+}
+
+#header {
+    width: 100%;
+    transition: all linear 0.2s;
+}
+#header.active {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgb(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.goal {
+    width: 50px;
+}
+
+.title {
+    text-transform: uppercase;
+}
+.subtitle {
+    color: #cacaca;
+}
+
+.block {
+    margin-bottom: 120px;
+}
+
+.helm {
+    width: 400px;
+    height: 400px;
+}
+
+.button {
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.button-primay {
+    background-color: red;
+    border: red;
+}
+.button-primay:hover {
+    background-color: rgba(255, 0, 0, 0.671);
+    border: red;
+}
+.btn-outline {
+    border-color: red;
+    color: red;
+}
+.btn-outline:hover {
+    background-color: red;
+    color: white;
+}
+
+#slider {
+    background: url(../img/bg.jpg) no-repeat center bottom;
+    background-size: cover;
+    color: white;
+}
+#slide h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#slide h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#player {
+    max-height: 350px;
+}
+
+#serviços a.destaque {
+    display: block;
+    background: #e7e7e7;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+
+#serviços a.destaque:hover {
+    background: white;
+    box-shadow: 0px 0px 50px 0px rgb(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+#serviços p {
+    color: #aaa;
+}
+
+#serviços a.destaque .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#serviços a.destaque .img-container img {
+    max-height: 160px;
+}
+
+#times a.link-cliente {
+    padding: 0 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #e7e7e7;
+    height: 100px;
+    transition: all ease-out 0.2s;
+    border-radius: 50px;
+}
+
+#times a.link-cliente:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.3);
+}
+
+#times a.link-cliente:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+#times a.link-cliente img {
+    filter: grayscale(100%);
+    max-height: 70px;
+    opacity: 0.6;
+}
+
+#times .cliente-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+#times .cliente-text .imagem img {
+    max-width: 250px;
+}
+
+#times .cliente-text .nfl {
+    font-size: 2rem;
+    color: #da2128;
+    font-weight: bold;
+}
+
+#stadium .badge {
+    font-weight: 400;
+}
+
+#stadium .element-item img {
+    border-radius: 5px;
+    transition: all ease-out 0.2s;
+}
+
+#stadium .element-item img:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+#stadium .button-group {
+    margin-bottom: 30px;
+}
+
+#stadium .button-group button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+}
+
+#stadium .button-group button + button {
+    margin-left: 30px;
+}
+
+#stadium .button-group button.active {
+    color: royalblue;
+}
+
+.play {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#depoimentos .depoimento {
+    background: #e7e7e7;
+    border-radius: 5px;
+    display: flex;
+    padding: 30px;
+}
+
+#depoimentos .depoimento .quote {
+    max-width: 35px;
+}
+
+#depoimentos .depoimento .name {
+    color: #aaaaaa;
+}
+
+#depoimentos .depoimento .name span {
+    color: black;
+    font-weight: bold;
+}
+
+#contato .email {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+#contato .email img {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+    width: 200px;
+    height: 200px;
+}
+
+#contato .email form {
+    width: 60%;
+    display: flex;
+}
+
+#contato .email form .btn {
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+    background: none;
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    #player {
+        max-height: 250px;
+    }
+    #service a.destaque .img-container {
+        height: 120px;
+    }
+    a.destaque .img-container img {
+        max-height: 120px;
+    }
+    #times .cliente-text .imagem {
+        padding: 0;
+    }
+    #times .cliente-text .imagem img {
+        max-width: 150px;
+    }
+
+    #contato .email {
+        padding: 60px 30px 50px 30px;
+    }
+
+    #contato .email form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #contato .email img {
+        width: 100px;
+        height: 130px;
+    }
+
+    #contato .email form .btn {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
